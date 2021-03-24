@@ -130,7 +130,7 @@ img {
     position: absolute;
     right: 0;
     top: 0;
-    width: 40%;
+    width: 43%;
     height: 100vh;
     justify-content: space-evenly;
     flex-direction: column;
@@ -214,6 +214,103 @@ img {
 /* End Navigation */
 
 /* Start Hero */
+.hero-content {
+  margin: 10% 15rem;
+}
+
+.hero-content h2 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  background-color: #e1d3ce;
+  padding: 9px 36px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 30px;
+  transition: all 300ms;
+}
+
+.hero-content .btn:hover {
+  background-color: #000;
+  color: #e1d3ce;
+  transition: all 300ms;
+}
+
+.header .hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 10rem;
+  object-fit: contain;
+}
+
+.header .hero-img-cut {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    position: absolute;
+    left: -13%;
+    top: 20%;
+  }
+  .hero-content h2 {
+    font-size: 36px;
+  }
+  .hero-content p {
+    font-size: 12px;
+  }
+  .hero-content .btn {
+    padding: 6px 27px;
+    font-size: 12px;
+  }
+  .header .hero-img {
+    right: 4rem;
+    bottom: 0;
+    height: 32rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-content {
+    position: absolute;
+    left: -19%;
+    top: 20%;
+  }
+  .hero-content h2 {
+    font-size: 40px;
+  }
+  .hero-content p {
+    font-size: 12px;
+  }
+  .hero-content .btn {
+    padding: 6px 27px;
+    font-size: 12px;
+  }
+  .header .hero-img {
+    display: none;
+  }
+  .header .hero-img-cut {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20rem;
+  }
+}
+
 /* End Hero */
 
 /* END HEADER */
