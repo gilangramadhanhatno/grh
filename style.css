@@ -310,7 +310,86 @@ img {
     height: 20rem;
   }
 }
-
 /* End Hero */
-
 /* END HEADER */
+
+/* START MAIN */
+/* Start Advert */
+.section {
+  padding: 4rem 10rem 2rem 10rem;
+}
+
+.advert-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  /* overflow-x: hidden; */
+}
+
+.advert-box {
+  position: relative;
+  color: #fff;
+  height: 27rem;
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.advert-box img {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  height: 100%;
+  width: 35rem;
+  z-index: -1;
+}
+
+.advert-box:nth-child(1) {
+  background-color: #f5c5d1;
+}
+.advert-box:nth-child(2) {
+  background-color: #a1d1df;
+}
+
+.advert-box .dotted {
+  position: relative;
+  height: 100%;
+  border: 2px dashed #f1f1f1;
+  border-radius: 1rem;
+}
+
+.advert-box .content {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0, -50%);
+}
+
+.advert-box .content h2,
+.advert-box .content h4 {
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.advert-box .content h2 {
+  line-height: 1.2;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.advert-box .content h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 576px) {
+  .section {
+    padding: 2rem 4rem;
+  }
+  .advert-center {
+    overflow: hidden;
+  }
+}
+/* End Advert */
+/* END MAIN */
