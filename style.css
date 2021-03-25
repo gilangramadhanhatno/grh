@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  /* background-color: #f6edea; */
+  background-color: #f6edea;
   color: #000;
   position: relative;
   z-index: 1;
@@ -323,7 +323,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2rem;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .advert-box {
@@ -383,13 +383,130 @@ img {
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .section {
-    padding: 2rem 4rem;
+    padding: 4rem 4rem 2rem 4rem;
   }
   .advert-center {
-    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 2fr));
+    gap: 2rem;
+  }
+  .advert-box {
+    height: 20rem;
+  }
+  .advert-box .content {
+    top: 60%;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .advert-center {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+  .advert-box .content {
+    left: 40%;
   }
 }
 /* End Advert */
+
+/* Start Special Ied */
+.title {
+  margin: 2rem 0;
+}
+
+.title h2 {
+  font-family: "Lora", serif;
+  font-size: 42px;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+.title h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  width: 100%;
+  height: 0.4rem;
+  z-index: 1;
+}
+
+.product-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 6rem 1.5rem;
+}
+
+.product {
+  height: 30rem;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+.product:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.product-header {
+  position: relative;
+  background-color: #e1d3ce;
+  transition: all 300ms ease-in-out;
+}
+
+.product-header img {
+  margin-bottom: -4px;
+}
+
+.product-footer {
+  padding: 2rem 1.6rem 1.6rem 1.6rem;
+}
+
+.product-footer h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.product-footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 4rem;
+}
+
+.product-footer ul li img {
+  width: 20px;
+}
+
+.product:hover .product-header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 1rem 1rem 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: all 500ms ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .product-center {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 2fr));
+    gap: 6rem 2rem;
+  }
+  .product {
+    height: 25rem;
+  }
+  .product-footer ul {
+    margin: 0 2rem;
+  }
+}
+/* End Special Ied */
 /* END MAIN */
