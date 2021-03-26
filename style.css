@@ -230,7 +230,7 @@ img {
   margin-top: 10px;
 }
 
-.hero-content .btn {
+.btn {
   display: inline-block;
   background-color: #e1d3ce;
   padding: 9px 36px;
@@ -243,7 +243,7 @@ img {
   transition: all 300ms;
 }
 
-.hero-content .btn:hover {
+.btn:hover {
   background-color: #000;
   color: #e1d3ce;
   transition: all 300ms;
@@ -272,7 +272,7 @@ img {
   .hero-content p {
     font-size: 12px;
   }
-  .hero-content .btn {
+  .btn {
     padding: 6px 27px;
     font-size: 12px;
   }
@@ -295,7 +295,7 @@ img {
   .hero-content p {
     font-size: 12px;
   }
-  .hero-content .btn {
+  .btn {
     padding: 6px 27px;
     font-size: 12px;
   }
@@ -509,4 +509,70 @@ img {
   }
 }
 /* End Special Ied */
+
+/* Start Product Banner */
+.product-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 30rem;
+  background-color: #a1d1df;
+}
+
+.product-banner .left img {
+  object-fit: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+.product-banner .right {
+  align-self: center;
+  text-align: center;
+  /* right: 40%; */
+}
+
+.product-banner .right h2 {
+  color: #e2a200;
+  font-weight: 600;
+}
+
+.product-banner .right .discount {
+  font-weight: 800;
+}
+
+.product-banner .content h1 span {
+  font-size: 2.8rem;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .product-banner {
+    height: 20rem;
+  }
+  .product-banner .left img {
+    height: 20rem;
+  }
+
+  .product-banner .content h1 span {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product-banner {
+    height: 10rem;
+  }
+  .product-banner .left img {
+    height: 10rem;
+  }
+  .product-banner .right .content h2 {
+    font-size: 1rem;
+  }
+  .product-banner .right .content h1 span {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+  }
+}
+/* End Product Banner */
 /* END MAIN */
