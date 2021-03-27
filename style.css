@@ -636,6 +636,29 @@ img {
 .testimonial h4 {
   margin-top: 0.4rem;
 }
-
 /* End Testimonial/Review */
+
+/* Start Brands */
+.brands-center {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6rem;
+  text-align: center;
+}
+
+.brand img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .brands-center {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .brands-center {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* End Brands */
 /* END MAIN */
