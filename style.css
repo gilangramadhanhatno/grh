@@ -472,14 +472,14 @@ img {
   font-weight: 500;
 }
 
-.product-footer ul {
+.list-bintang {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 4rem;
 }
 
-.product-footer ul li img {
+.list-bintang li img {
   width: 20px;
 }
 
@@ -504,7 +504,7 @@ img {
   .product {
     height: 25rem;
   }
-  .product-footer ul {
+  .list-bintang {
     margin: 0 2rem;
   }
 }
@@ -575,4 +575,67 @@ img {
   }
 }
 /* End Product Banner */
+
+/* Start Testimonial/Review */
+.testimonial-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 6rem 1.5rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+  text-align: center;
+  border-radius: 0.5rem;
+  /* height: 26rem; */
+}
+
+.testimonial:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+  transform: translateY(-1rem);
+}
+
+.testimonial span {
+  font-size: 6rem;
+  line-height: 1;
+  font-family: serif;
+}
+
+.testimonial p {
+  font-size: 14px;
+  margin: -3rem 0;
+}
+
+.testimonial .list-bintang {
+  width: 6rem;
+  margin-top: 3.4rem;
+}
+
+.testimonial .img-cover {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.testimonial .img-cover img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial h4 {
+  margin-top: 0.4rem;
+}
+
+/* End Testimonial/Review */
 /* END MAIN */
