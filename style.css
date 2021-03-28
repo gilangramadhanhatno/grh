@@ -648,6 +648,7 @@ img {
 
 .brand img {
   object-fit: contain;
+  background-color: rgb(175, 175, 175);
 }
 
 @media screen and (max-width: 768px) {
