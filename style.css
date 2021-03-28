@@ -663,3 +663,87 @@ img {
 }
 /* End Brands */
 /* END MAIN */
+
+/* START FOOTER */
+.footer {
+  margin-top: 3rem;
+  border-top: 1px solid #000;
+  background-color: #f6edea;
+  color: #000;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  font-family: "Lora", serif;
+}
+
+.footer-title {
+  margin-bottom: 0.5rem;
+}
+
+.footer-deal {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-store {
+  width: 100px;
+}
+
+.footer-address {
+  color: #606060;
+}
+
+.footer-link {
+  color: #606060;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  color: #606060;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer .footer-copy {
+  border-top: 1px solid #606060;
+  padding-top: 3rem;
+  text-align: center;
+  color: #606060;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-title {
+    font-size: 14px;
+  }
+
+  .footer-link {
+    font-size: 12px;
+  }
+
+  .footer-address {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer .footer-container {
+    flex-direction: column;
+  }
+  .footer-title {
+    margin-top: 1rem;
+  }
+  .footer .footer-copy {
+    font-size: 10px;
+  }
+}
+/* END FOOTER */
