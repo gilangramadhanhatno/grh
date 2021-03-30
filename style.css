@@ -429,7 +429,7 @@ img {
 
 .title h2 {
   font-family: "Lora", serif;
-  font-size: 42px;
+  font-size: 32px;
   display: inline-block;
   position: relative;
   z-index: 0;
@@ -778,3 +778,41 @@ img {
   }
 }
 /* END FOOTER */
+
+/* PRODUCT.HTML */
+/* Start All Product */
+.section .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.all-products .top select {
+  width: 10rem;
+  padding: 0.2rem;
+  border: 1px solid #ccc;
+  /* appearance: none; */
+  outline: none;
+}
+/* End All Product */
+
+/* Start Pagination */
+
+.pagination span {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid #000;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.pagination span:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pagination span img {
+  width: 14px;
+}
+/* End Pagination */
