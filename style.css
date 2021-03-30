@@ -797,7 +797,6 @@ img {
 /* End All Product */
 
 /* Start Pagination */
-
 .pagination span {
   display: inline-block;
   padding: 0.2rem 0.6rem;
@@ -816,3 +815,120 @@ img {
   width: 14px;
 }
 /* End Pagination */
+
+/* PRODUCT-DETAIL.HTML */
+/* Start Product-Detail */
+.product-detail .details {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 7rem;
+  margin-top: -2rem;
+}
+
+.product-detail .details .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-detail .details .left .main {
+  text-align: center;
+  background-color: #e1d3ce;
+  margin-bottom: 2rem;
+  width: 33rem;
+  height: 33rem;
+}
+
+.product-detail .details .left .main img {
+  object-fit: contain;
+  height: 100%;
+}
+
+.product-detail .details .thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 24rem;
+  border: 1px solid #000;
+  background-color: #f6edea;
+  margin-top: -5.2rem;
+  margin-left: 4.4rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.product-detail .thumbnail {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.5rem auto;
+  text-align: center;
+  background-color: #e1d3ce;
+  cursor: pointer;
+}
+
+.product-detail .thumbnail:hover {
+  background-color: #706967;
+  transition: all 300ms ease-in-out;
+}
+
+.product-detail .thumbnail img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-detail .right span {
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-detail .right h2 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.product-detail .right .price {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.product-detail .right div {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.product-detail .right select {
+  width: 10rem;
+  padding: 0.2rem;
+  border: 1px solid #fff;
+  outline: none;
+}
+
+.product-detail form {
+  margin-bottom: 2rem;
+}
+
+.product-detail .form {
+  margin-bottom: 3rem;
+}
+
+.product-detail .form input {
+  padding: 0.4rem;
+  text-align: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-right: 2rem;
+}
+
+.product-detail .form .addCart {
+  border-radius: 3rem;
+}
+
+.product-detail h3 {
+  margin-bottom: 0.5rem;
+}
+
+.product-detail p {
+  font-size: 15px;
+}
+/* End Product-Detail */
