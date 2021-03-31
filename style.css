@@ -851,7 +851,7 @@ img {
   margin-top: -5.2rem;
   margin-left: 4.4rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
-  z-index: 1;
+  z-index: 0;
 }
 
 .product-detail .thumbnail {
@@ -864,7 +864,7 @@ img {
 }
 
 .product-detail .thumbnail:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   border: 1px solid #000;
 }
 
@@ -946,7 +946,7 @@ img {
 }
 
 .active {
-  opacity: 0.5;
+  opacity: 0.8;
   border: 1px solid #000;
 }
 
@@ -1058,3 +1058,89 @@ img {
   }
 }
 /* End Product-Detail */
+
+/* START CART.HTML */
+/* Start Cart Items */
+.cart {
+  margin: 10rem auto;
+}
+
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart table th {
+  text-align: left;
+  padding: 0.5rem;
+  background-color: #e1d3ce;
+  font-weight: 400;
+}
+
+.img-info {
+  background-color: #e1d3ce;
+  margin-right: 1rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+.cart table td {
+  padding: 1rem 1rem;
+}
+
+.cart table td input {
+  width: 3rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.cart table td a {
+  color: orangered;
+  font-size: 1rem;
+}
+
+.cart table td a:hover {
+  text-decoration: underline;
+}
+
+.cart table td img {
+  width: 77%;
+  margin-left: 0.9rem;
+}
+
+.cart table td .cart-info .info p {
+  margin-bottom: 0.5rem;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+
+.total-price table {
+  border-top: 3px solid orangered;
+  width: 100%;
+  max-width: 35rem;
+}
+
+.cart table td:last-child {
+  text-align: right;
+}
+
+.cart table th:last-child {
+  text-align: right;
+}
+
+.total-price table tr:last-child {
+  font-weight: 700;
+}
+/* End Cart Items */
+/* END CART.HTML */
