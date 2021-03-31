@@ -8,6 +8,7 @@
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
   /* font-size: 62.5%; */
 }
 
@@ -146,7 +147,6 @@ img {
     height: 100vh;
     justify-content: space-evenly;
     flex-direction: column;
-    /* align-items: center; */
     background-color: #e1d3ce;
     z-index: -1;
     transform: translateX(100%);
@@ -847,7 +847,6 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 24rem;
-  border: 1px solid #000;
   background-color: #f6edea;
   margin-top: -5.2rem;
   margin-left: 4.4rem;
@@ -864,8 +863,9 @@ img {
 }
 
 .product-detail .thumbnail:hover {
-  background-color: #706967;
-  transition: all 300ms ease-in-out;
+  /* background-color: #706967; */
+  border: 1px solid #000;
+  /* transition: all 300ms ease-in-out; */
 }
 
 .product-detail .thumbnail img {
@@ -886,7 +886,7 @@ img {
 }
 
 .product-detail .right .price {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -894,7 +894,7 @@ img {
 .product-detail .right div {
   display: inline-block;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .product-detail .right select {
@@ -930,5 +930,113 @@ img {
 
 .product-detail p {
   font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .product-detail .details {
+    gap: 2rem;
+    overflow: hidden;
+  }
+  .product-detail .details .left .main {
+    width: 22rem;
+    height: 22rem;
+  }
+  .product-detail .details .thumbnails {
+    width: 16rem;
+    margin-top: -4rem;
+    margin-left: 3rem;
+  }
+  .product-detail .thumbnail {
+    width: 3rem;
+    height: 3rem;
+  }
+  .product-detail .right span {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .product-detail .right h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .product-detail .right .price {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .product-detail .right select {
+    width: 8rem;
+    padding: 0.1rem;
+  }
+  .product-detail form {
+    margin-bottom: 0;
+  }
+  .product-detail .form {
+    margin-bottom: 1.6rem;
+  }
+  .product-detail .form input {
+    padding: 0.2rem;
+    text-align: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 1.5rem;
+  }
+  .product-detail h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .product-detail p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product-detail .details {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .product-detail .details .left .main {
+    width: 28rem;
+    height: 28rem;
+  }
+  .product-detail .details .thumbnails {
+    width: 22rem;
+    margin-top: -4.8rem;
+    margin-left: 3rem;
+  }
+  .product-detail .thumbnail {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+  .product-detail .right span {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .product-detail .right h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .product-detail .right .price {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .product-detail form {
+    margin-bottom: 0.5rem;
+  }
+  .product-detail .form {
+    margin-bottom: 2rem;
+  }
+  .product-detail .form input {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 2rem;
+  }
+  .product-detail .form .addCart {
+    padding: 9px 36px;
+  }
+  .product-detail h3 {
+    margin-bottom: 0.5rem;
+  }
+  .product-detail p {
+    font-size: 15px;
+  }
 }
 /* End Product-Detail */
