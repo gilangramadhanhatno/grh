@@ -48,3 +48,30 @@ links.map((link) => {
 // gsap.from(".hero-content h2", { opacity: 0, duration: 1, delay: 2.5, y: -50 });
 // gsap.from(".hero-content p", { opacity: 0, duration: 1, delay: 3, y: -45 });
 // gsap.from(".hero-content a", { opacity: 0, duration: 1, delay: 4, y: 50 });
+
+// EVENT BUBLING/EVENT DELEGATION
+const containerLeft = document.querySelector(".left");
+const jumbo = document.querySelector(".jumbo");
+const thumbs = document.querySelectorAll(".thumb");
+
+containerLeft.addEventListener("click", (e) => {
+  if ((e.target.className = "thumb")) {
+    jumbo.src = e.target.src;
+    jumbo.classList.add("fade");
+    setTimeout(() => {
+      jumbo.classList.remove("fade");
+    }, 500);
+
+    thumbs.forEach((thumb) => {
+      // Ini Kalo dicek terlebih dahulu
+      // if (thumb.classList.contains("active")) {
+      //   thumb.classList.remove("active");
+      // }
+
+      // Paksa semua untuk ubah classnya jadi thumb
+      thumb.className = "thumb";
+    });
+
+    e.target.classList.add("active");
+  }
+});
