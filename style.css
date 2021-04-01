@@ -479,6 +479,10 @@ img {
   padding: 2rem 1.6rem 1.6rem 1.6rem;
 }
 
+.product-footer a:hover {
+  text-decoration: underline;
+}
+
 .product-footer h3 {
   font-size: 1.2rem;
   font-weight: 500;
