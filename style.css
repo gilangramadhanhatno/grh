@@ -336,6 +336,12 @@ img {
   .header .hero-img-cut {
     left: 18%;
   }
+  .hero-content h2 {
+    font-size: 46px;
+  }
+  .hero-content p {
+    font-size: 11px;
+  }
 }
 /* End Hero */
 /* END HEADER */
